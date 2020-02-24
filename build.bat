@@ -1,0 +1,2 @@
+pyinstaller test.py ^
+            --onefile
