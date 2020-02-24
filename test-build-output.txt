@@ -1,0 +1,78 @@
+(test) C:\Users\JPA\Documents\Lambda-X\_Libraries\calmanimo_new>pyinstaller test.py     --add-data "settings.json;." --add-data "tests_data/10D.NIMOW;tests_data/."     --add-data "calmanimo/GUI/icons/*;calmanimo/GUI/icons/"     --add-binary "calmanimo/devices/clementor/dll/*;." --version-file "CI/version.py"     --onefile   || set "ERROR_CODE=!ERRORLEVEL!"
+65 INFO: PyInstaller: 3.5
+66 INFO: Python: 3.6.5
+67 INFO: Platform: Windows-10-10.0.18362-SP0
+68 INFO: wrote C:\Users\JPA\Documents\Lambda-X\_Libraries\calmanimo_new\test.spec
+79 INFO: UPX is not available.
+83 INFO: Extending PYTHONPATH with paths
+['C:\\Users\\JPA\\Documents\\Lambda-X\\_Libraries',
+ 'C:\\Users\\JPA\\Documents\\Lambda-X\\_Libraries\\calmanimo_new']
+91 INFO: checking Analysis
+91 INFO: Building Analysis because Analysis-00.toc is non existent
+92 INFO: Initializing module dependency graph...
+95 INFO: Initializing module graph hooks...
+97 INFO: Analyzing base_library.zip ...
+3516 INFO: running Analysis Analysis-00.toc
+3519 INFO: Adding Microsoft.Windows.Common-Controls to dependent assemblies of final executable
+  required by c:\users\jpa\appdata\local\continuum\anaconda3\envs\test\python.exe
+3841 INFO: Caching module hooks...
+3848 INFO: Analyzing C:\Users\JPA\Documents\Lambda-X\_Libraries\calmanimo_new\test.py
+5031 INFO: Processing pre-find module path hook   distutils
+5736 INFO: Processing pre-find module path hook   site
+5737 INFO: site: retargeting to fake-dir 'c:\\users\\jpa\\appdata\\local\\continuum\\anaconda3\\envs\\test\\lib\\site-packages\\PyInstaller\\fake-modules'
+7808 INFO: Processing pre-safe import module hook   setuptools.extern.six.moves
+11006 INFO: Loading module hooks...
+11007 INFO: Loading module hook "hook-clr.py"...
+11011 INFO: Loading module hook "hook-distutils.py"...
+11017 INFO: Loading module hook "hook-encodings.py"...
+11121 INFO: Loading module hook "hook-importlib_metadata.py"...
+11124 INFO: Loading module hook "hook-lib2to3.py"...
+11134 INFO: Loading module hook "hook-numpy.core.py"...
+11272 INFO: Loading module hook "hook-numpy.py"...
+11273 INFO: Loading module hook "hook-pkg_resources.py"...
+11545 INFO: Processing pre-safe import module hook   win32com
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+ModuleNotFoundError: No module named 'win32com'
+11599 INFO: Processing pre-safe import module hook   win32com
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+ModuleNotFoundError: No module named 'win32com'
+11890 INFO: Loading module hook "hook-pubsub.core.py"...
+12099 INFO: Loading module hook "hook-pydoc.py"...
+12101 INFO: Loading module hook "hook-pytest.py"...
+12808 INFO: Loading module hook "hook-setuptools.py"...
+13361 INFO: Loading module hook "hook-sysconfig.py"...
+13362 INFO: Loading module hook "hook-wx.xrc.py"...
+13364 INFO: Loading module hook "hook-xml.dom.domreg.py"...
+13371 INFO: Loading module hook "hook-xml.etree.cElementTree.py"...
+13373 INFO: Loading module hook "hook-xml.py"...
+13442 INFO: Looking for ctypes DLLs
+13501 INFO: Analyzing run-time hooks ...
+13508 INFO: Including run-time hook 'pyi_rth_pkgres.py'
+13509 INFO: Including run-time hook 'pyi_rth_multiprocessing.py'
+13527 INFO: Looking for dynamic libraries
+14035 INFO: Looking for eggs
+14036 INFO: Using Python library c:\users\jpa\appdata\local\continuum\anaconda3\envs\test\python36.dll
+14036 INFO: Found binding redirects:
+[]
+14056 INFO: Warnings written to C:\Users\JPA\Documents\Lambda-X\_Libraries\calmanimo_new\build\test\warn-test.txt
+14258 INFO: Graph cross-reference written to C:\Users\JPA\Documents\Lambda-X\_Libraries\calmanimo_new\build\test\xref-test.html
+14295 INFO: Appending 'binaries' from .spec
+14297 INFO: Appending 'datas' from .spec
+14300 INFO: checking PYZ
+14301 INFO: Building PYZ because PYZ-00.toc is non existent
+14301 INFO: Building PYZ (ZlibArchive) C:\Users\JPA\Documents\Lambda-X\_Libraries\calmanimo_new\build\test\PYZ-00.pyz
+15664 INFO: Building PYZ (ZlibArchive) C:\Users\JPA\Documents\Lambda-X\_Libraries\calmanimo_new\build\test\PYZ-00.pyz completed successfully.
+15700 INFO: checking PKG
+15701 INFO: Building PKG because PKG-00.toc is non existent
+15701 INFO: Building PKG (CArchive) PKG-00.pkg
+26081 INFO: Building PKG (CArchive) PKG-00.pkg completed successfully.
+26088 INFO: Bootloader c:\users\jpa\appdata\local\continuum\anaconda3\envs\test\lib\site-packages\PyInstaller\bootloader\Windows-32bit\run.exe
+26091 INFO: checking EXE
+26092 INFO: Building EXE because EXE-00.toc is non existent
+26092 INFO: Building EXE from EXE-00.toc
+26107 INFO: Updating manifest in C:\Users\JPA\AppData\Local\Temp\tmps9brog_j
+26112 INFO: Updating resource type 24 name 1 language 0
+26117 INFO: Appending archive to EXE C:\Users\JPA\Documents\Lambda-X\_Libraries\calmanimo_new\dist\test.exe
+26143 INFO: Building EXE from EXE-00.toc completed successfully.

@@ -1,1 +1,0 @@
-call conda activate test
